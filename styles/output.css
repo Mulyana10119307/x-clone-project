@@ -548,21 +548,20 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .flex {
   display: flex;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .w-full {
@@ -666,58 +665,36 @@ video {
 }
 
 @media not all and (min-width: 370px) {
-  .max-mobile\:mb-6 {
-    margin-bottom: 1.5rem;
-  }
-
-  .max-mobile\:mt-6 {
-    margin-top: 1.5rem;
+  .max-mobile\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .max-mobile\:mb-3 {
     margin-bottom: 0.75rem;
   }
 
-  .max-mobile\:mb-1 {
-    margin-bottom: 0.25rem;
-  }
-
-  .max-mobile\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
-  .max-mobile\:mb-2 {
-    margin-bottom: 0.5rem;
+  .max-mobile\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .max-mobile\:mt-2 {
     margin-top: 0.5rem;
   }
 
-  .max-mobile\:size-1 {
-    width: 0.25rem;
-    height: 0.25rem;
-  }
-
-  .max-mobile\:w-8 {
-    width: 2rem;
-  }
-
-  .max-mobile\:w-6 {
-    width: 1.5rem;
+  .max-mobile\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .max-mobile\:w-5 {
     width: 1.25rem;
   }
 
-  .max-mobile\:p-2 {
-    padding: 0.5rem;
+  .max-mobile\:w-8 {
+    width: 2rem;
   }
 
-  .max-mobile\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .max-mobile\:p-2 {
+    padding: 0.5rem;
   }
 
   .max-mobile\:text-2xl {
@@ -725,18 +702,19 @@ video {
     line-height: 2rem;
   }
 
-  .max-mobile\:text-\[8px\] {
-    font-size: 8px;
-  }
-
-  .max-mobile\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+  .max-mobile\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .max-mobile\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .max-mobile\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
@@ -761,46 +739,27 @@ video {
     margin-top: 2rem;
   }
 
-  .mobile\:w-6 {
-    width: 1.5rem;
-  }
-
-  .mobile\:w-80 {
-    width: 20rem;
-  }
-
-  .mobile\:w-7 {
-    width: 1.75rem;
-  }
-
-  .mobile\:w-8 {
-    width: 2rem;
-  }
-
   .mobile\:w-10 {
     width: 2.5rem;
-  }
-
-  .mobile\:flex-col {
-    flex-direction: column;
   }
 
   .mobile\:p-3 {
     padding: 0.75rem;
   }
 
-  .mobile\:text-center {
-    text-align: center;
+  .mobile\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .mobile\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .mobile\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
-  .mobile\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .mobile\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .mobile\:text-sm {
@@ -812,25 +771,67 @@ video {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+}
 
-  .mobile\:text-4xl {
+@media (min-width: 640px) {
+  .tablet\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .tablet\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .tablet\:w-14 {
+    width: 3.5rem;
+  }
+
+  .tablet\:w-20 {
+    width: 5rem;
+  }
+
+  .tablet\:w-8 {
+    width: 2rem;
+  }
+
+  .tablet\:items-center {
+    align-items: center;
+  }
+
+  .tablet\:justify-center {
+    justify-content: center;
+  }
+
+  .tablet\:p-4 {
+    padding: 1rem;
+  }
+
+  .tablet\:text-center {
+    text-align: center;
+  }
+
+  .tablet\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .tablet\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .mobile\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .tablet\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
-  .mobile\:text-base {
+  .tablet\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .tablet\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-}
-
-@media (min-width: 640px) {
-  .tablet\:w-14 {
-    width: 3.5rem;
   }
 }
