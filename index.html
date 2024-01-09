@@ -9,44 +9,57 @@
 
   <body class="h-screen flex flex-col justify-between">
     <main>
-      <div class="flex flex-col items-center p-4">
+      <div class="flex flex-col items-center p-6">
         <div class="flex flex-col p-4">
           <img
             src="./images/icons8-twitterx.svg"
             alt="X-icon"
-            class="mobile:w-20" />
-          <h1 class="font-extrabold mobile:text-5xl mobile:mt-8 mobile:mb-8">
+            class="max-mobile:w-8 mobile:w-10 tablet:w-14" />
+          <h1
+            class="font-extrabold max-mobile:text-3xl max-mobile:mt-6 max-mobile:mb-6 mobile:text-4xl mobile:mt-8 mobile:mb-8">
             Sedang tren saat ini
           </h1>
-          <h2 class="font-bold mobile:text-2xl mobile:mb-4">
+          <h2
+            class="font-bold max-mobile:text-2xl max-mobile:mb-3 mobile:text-3xl mobile:mb-4">
             Bergabunglah sekarang.
           </h2>
-          <div class="flex mobile:flex-col items-center">
-            <button
-              class="flex items-center justify-center gap-2 font-bold rounded-full border hover:bg-gray-200 mobile:p-3 mobile:w-80 mobile:mt-2 mobile:mb-2">
-              <img src="./images/icons8-google.svg" alt="icon-google" />
-              <p>Login dengan Google</p>
-            </button>
-            <button
-              class="flex items-center justify-center gap-2 font-bold rounded-full border hover:bg-gray-200 mobile:p-3 mobile:w-80 mobile:mt-2 mobile:mb-2">
-              <img src="./images/icons8-apple.svg" alt="icon-apple" />
-              <p>Daftar dengan Apple</p>
-            </button>
-            <p class="mobile:text-center">atau</p>
-            <button
-              class="border bg-blue-400 border-blue-400 text-white font-bold rounded-full hover:bg-blue-500 mobile:p-3 mobile:w-80 mobile:mt-2 mobile:mb-2">
-              Buat akun
-            </button>
-            <p class="text-slate-500 text-center mb-8 font-thin mobile:text-xs">
-              Dengan mendaftar, Anda menyetujui Persyaratan Layanan dan
-              Kebijakan Privasi. Termasuk penggunakan Kuki.
+        </div>
+        <div class="flex-col items-center p-4">
+          <button
+            class="flex items-center justify-center gap-2 font-bold rounded-full border w-full hover:bg-gray-200 max-mobile:p-2 max-mobile:mt-2 max-mobile:mb-2 mobile:p-3 mobile:mt-2 mobile:mb-2">
+            <img
+              src="./images/icons8-google.svg"
+              alt="icon-google"
+              class="max-mobile:w-5" />
+            <p class="max-mobile:text-sm mobile:text-base">
+              Login dengan Google
             </p>
-            <h3 class="font-bold">Sudah punya akun?</h3>
-            <button
-              class="border text-blue-400 font-bold rounded-full hover:bg-blue-50 mobile:p-3 mobile:w-80 mobile:mt-2 mobile:mb-2">
-              Masuk
-            </button>
-          </div>
+          </button>
+          <button
+            class="flex items-center justify-center gap-2 font-bold rounded-full w-full border hover:bg-gray-200 max-mobile:p-2 max-mobile:mt-2 max-mobile:mb-2 mobile:p-3 mobile:mt-2 mobile:mb-2">
+            <img
+              src="./images/icons8-apple.svg"
+              alt="icon-apple"
+              class="max-mobile:w-5" />
+            <p class="max-mobile:text-sm mobile:text-base">
+              Daftar dengan Apple
+            </p>
+          </button>
+          <p class="text-center max-mobile:text-sm mobile:text-base">atau</p>
+          <button
+            class="border bg-blue-400 w-full border-blue-400 text-white font-bold rounded-full hover:bg-blue-500 max-mobile:p-2 max-mobile:mt-2 max-mobile:mb-2 mobile:p-3 mobile:mt-2 mobile:mb-2">
+            <p class="max-mobile:text-sm mobile:text-base">Buat akun</p>
+          </button>
+          <p
+            class="text-slate-500 text-center mb-8 font-thin max-mobile:text-xs mobile:text-xs">
+            Dengan mendaftar, Anda menyetujui Persyaratan Layanan dan Kebijakan
+            Privasi. Termasuk penggunakan Kuki.
+          </p>
+          <h3 class="font-bold max-mobile:text-sm">Sudah punya akun?</h3>
+          <button
+            class="border text-blue-400 font-bold w-full rounded-full hover:bg-blue-50 max-mobile:p-2 max-mobile:mt-2 max-mobile:mb-2 mobile:p-3 mobile:mt-2 mobile:mb-2">
+            <p class="max-mobile:text-sm mobile:text-base">Masuk</p>
+          </button>
         </div>
       </div>
     </main>
@@ -54,7 +67,7 @@
     <!-- FOOTER -->
     <footer class="flex p-4">
       <div
-        class="flex flex-wrap p-4 gap-2 justify-center font-thin text-slate-500 mobile:text-sm">
+        class="flex flex-wrap p-4 gap-2 justify-center font-thin text-slate-500 max-mobile:text-xs mobile:text-sm">
         <p>Tentang</p>
         <p>Unduh aplikasi X</p>
         <p>Pusat bantuan</p>
