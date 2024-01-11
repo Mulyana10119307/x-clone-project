@@ -7,35 +7,52 @@
     <link rel="stylesheet" href="/styles/output.css" />
   </head>
   <body class="h-screen">
-    <div class="flex flex-col h-screen justify-between p-4">
-      <div class="flex flex-col items-center">
-        <img
-          src="../images/icons8-twitterx.svg"
-          alt="X-icon"
-          class="max-mobile:w-8 mobile:w-10 tablet:w-20" />
-        <h1
-          class="font-bold max-mobile:text-xl mobile:text-2xl tablet:text-3xl laptop:text-4xl">
-          Masukan Username dan Password
-        </h1>
-        <form>
-          <input
-            class="border border-x-slate-300 w-full max-w-sm py-4"
-            type="text"
-            name="username"
-            id="username" />
-          <input
-            class="border border-x-slate-300"
-            type="password"
-            name="password"
-            id="password" />
-        </form>
-        <p>lupa password?</p>
+    <div class="flex justify-center gap-10">
+      <div class="flex flex-col justify-center max-laptop:hidden w-96">
+        <img src="../images/icons8-twitterx.svg" alt="X-icon" />
       </div>
-      <div>
-        <a href="#">
-          <button>Login</button>
-        </a>
-        <p>tidak punya akun? Daftar</p>
+      <div
+        class="flex flex-col h-screen justify-between p-4 laptop:justify-center">
+        <div class="flex flex-col items-center">
+          <img
+            src="../images/icons8-twitterx.svg"
+            alt="X-icon"
+            class="max-mobile:w-8 mobile:w-10 tablet:w-20 my-2 laptop:hidden" />
+          <h1
+            class="font-bold my-5 max-mobile:text-xl mobile:text-2xl tablet:text-3xl laptop:text-4xl">
+            Masukan Username dan Password
+          </h1>
+          <form class="flex flex-col w-full items-center gap-6">
+            <input
+              class="border rounded-md border-x-slate-300 w-full max-w-md py-3 px-2 focus:outline-none focus:border-blue-500 mobile:py-4 tablet:text-xl laptop:py-5"
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username" />
+            <input
+              class="border rounded-md border-x-slate-300 w-full max-w-md py-3 px-2 focus:outline-none focus:border-blue-500 mobile:py-4 tablet:text-xl laptop:py-5"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password" />
+          </form>
+          <a
+            href="#"
+            class="my-1 px-2 text-blue-500 hover:underline max-mobile:text-sm">
+            lupa password?
+          </a>
+        </div>
+        <div class="flex flex-col items-center">
+          <a
+            class="border text-center bg-slate-950 text-white transition duration-300 font-bold w-full max-w-md rounded-full hover:bg-slate-700 max-mobile:p-2 max-mobile:mt-2 max-mobile:mb-2 mobile:p-3 mobile:mt-2 mobile:mb-2 tablet:p-4 tablet:mt-3 tablet:mb-3 laptop:p-5"
+            href="#">
+            <button>Login</button>
+          </a>
+          <p class="max-mobile:text-sm">
+            tidak punya akun?
+            <a href="#" class="text-blue-500 hover:underline">Daftar</a>
+          </p>
+        </div>
       </div>
     </div>
   </body>
