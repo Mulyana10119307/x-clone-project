@@ -560,12 +560,52 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-screen {
   height: 100vh;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-dvw {
+  width: 100dvw;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.max-w-80 {
+  max-width: 20rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .flex-col {
@@ -605,6 +645,18 @@ video {
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
 }
 
+.border-x-slate-500 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(100 116 139 / var(--tw-border-opacity));
+  border-right-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+
+.border-x-slate-300 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(203 213 225 / var(--tw-border-opacity));
+  border-right-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
 .bg-blue-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
@@ -618,8 +670,27 @@ video {
   padding: 1.5rem;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -647,6 +718,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -732,6 +808,11 @@ video {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .max-mobile\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 370px) {
@@ -778,6 +859,11 @@ video {
   .mobile\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .mobile\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -834,6 +920,11 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .tablet\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -880,5 +971,10 @@ video {
   .laptop\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .laptop\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

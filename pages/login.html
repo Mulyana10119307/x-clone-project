@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | X</title>
+    <link rel="stylesheet" href="/styles/output.css" />
+  </head>
+  <body class="h-screen">
+    <div class="flex flex-col h-screen justify-between p-4">
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/icons8-twitterx.svg"
+          alt="X-icon"
+          class="max-mobile:w-8 mobile:w-10 tablet:w-20" />
+        <h1
+          class="font-bold max-mobile:text-xl mobile:text-2xl tablet:text-3xl laptop:text-4xl">
+          Masukan Username dan Password
+        </h1>
+        <form>
+          <input
+            class="border border-x-slate-300 w-full max-w-sm py-4"
+            type="text"
+            name="username"
+            id="username" />
+          <input
+            class="border border-x-slate-300"
+            type="password"
+            name="password"
+            id="password" />
+        </form>
+        <p>lupa password?</p>
+      </div>
+      <div>
+        <a href="#">
+          <button>Login</button>
+        </a>
+        <p>tidak punya akun? Daftar</p>
+      </div>
+    </div>
+  </body>
+</html>
